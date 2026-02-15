@@ -1,14 +1,7 @@
-# Introduction
 
-During the hackathon our group implemented a backend module that allows users to react to messages using named ReactionTypes.
+# Chirper
 
-The module supports single reaction per user per message. Users can also remove a reaction they previously added. Pinned posts and messages are persistent across sessions and isloated for each user profile.
-
-The module was built as an augmentation of the provided miniproject. We followed the course constraints (no signature changes except where allowed) and implemented the following tasks required by the hackathon specification, plus a few extra quality and UX improvements.
-
-# About our app
-
-This Android application is a social platform that allows users to create, share, and interact with posts in real time. 
+Chirper is a social platform that allows users to create, share, and interact with posts in real time. 
 
 Users can register or log in, browse posts from others, search by keywords, and create new posts of their own. 
 
@@ -26,7 +19,6 @@ Testing was done on virtual device of Google Pixel 9A. Optionally, any other Med
 
 # What We Implemented
 
-All hackathon tasks (1–5) were completed as a group. In addition we added some front-end facing features and quality improvements.
 **New / completed functionality:**
 
 - User authentication: sign up and sign in flows implemented (passwords are hashed).
@@ -213,3 +205,4 @@ Removing a reaction removes only the matching reaction type for that user-messag
 
 ## 5) Search
 Posts can be found by topic. The search engine is a simple in-memory index (topic → post ids) updated on post creation.
+
