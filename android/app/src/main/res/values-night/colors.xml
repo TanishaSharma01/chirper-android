@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background Colors (Dark Mode - Material Design) -->
+    <color name="background">#121212</color>
+    <color name="surface">#1E1E1E</color>
+    <color name="cardBackground">#272727</color>
+    <color name="divider">#404040</color>
+
+    <!-- Text Colors (Dark Mode - Material Design Opacity) -->
+    <color name="primaryText">#DEFFFFFF</color> <!-- 87% white -->
+    <color name="secondaryText">#99FFFFFF</color> <!-- 60% white -->
+    <color name="tertiaryText">#61FFFFFF</color> <!-- 38% white -->
+
+    <!-- Accent Colors (Lighter versions for dark mode) -->
+    <color name="accentGreen">#66BB6A</color> <!-- Lighter green for dark mode -->
+    <color name="accentGreenDark">#81C784</color>
+    <color name="accentGreenLight">#A5D6A7</color>
+    <color name="accentOrange">#FF6F3F</color> <!-- Lighter orange for dark mode -->
+    <color name="accentOrangeDark">#FF8A65</color>
+
+    <!-- Pinned Item Backgrounds (Dark Mode - Subtle but visible) -->
+    <color name="pinnedPostBackground">#1B3A1B</color> <!-- Dark green tint -->
+    <color name="pinnedMessageBackground">#3D3520</color> <!-- Dark yellow tint -->
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/cardBackground"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    android:clickable="false"
+    android:focusable="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:clickable="false"
+        android:focusable="false">
+
+        <!-- Message Content -->
+        <TextView
+            android:id="@+id/textViewMessageContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message Content"
+            android:textSize="16sp"
+            android:textColor="@color/primaryText"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Author Image + Name + Timestamp -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="false"
+            android:focusable="false">
+
+            <!-- Author profile image -->
+            <ImageView
+                android:id="@+id/imageViewAuthor"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/default_profile"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:background="@drawable/profile_circle_background"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/textViewMessageAuthor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Author Name"
+                android:textSize="14sp"
+                android:textColor="@color/secondaryText"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/textViewMessageTimestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timestamp"
+                android:textSize="12sp"
+                android:textColor="@color/tertiaryText"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/reactionCounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/secondaryText" />
+
+        <!-- Shown when user has NOT selected a reaction -->
+        <LinearLayout
+            android:id="@+id/emojiBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <TextView android:id="@+id/emojiLike"        android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="👍" android:textSize="22sp" android:padding="6dp" android:clickable="true" android:focusable="true"/>
+            <TextView android:id="@+id/emojiLove"        android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="❤️" android:textSize="22sp" android:padding="6dp" android:clickable="true" android:focusable="true"/>
+            <TextView android:id="@+id/emojiLaugh"       android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="😂" android:textSize="22sp" android:padding="6dp" android:clickable="true" android:focusable="true"/>
+            <TextView android:id="@+id/emojiHappy"       android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="😊" android:textSize="22sp" android:padding="6dp" android:clickable="true" android:focusable="true"/>
+            <TextView android:id="@+id/emojiGoodLuck"    android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🍀" android:textSize="22sp" android:padding="6dp" android:clickable="true" android:focusable="true"/>
+            <TextView android:id="@+id/emojiCongrats"    android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎉" android:textSize="22sp" android:padding="6dp" android:clickable="true" android:focusable="true"/>
+            <TextView android:id="@+id/emojiSurprise"    android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="😮" android:textSize="22sp" android:padding="6dp" android:clickable="true" android:focusable="true"/>
+            <TextView android:id="@+id/emojiSad"         android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="😢" android:textSize="22sp" android:padding="6dp" android:clickable="true" android:focusable="true"/>
+            <TextView android:id="@+id/emojiAngry"       android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="😡" android:textSize="22sp" android:padding="6dp" android:clickable="true" android:focusable="true"/>
+
+        </LinearLayout>
+
+        <!-- Shown when user HAS selected a reaction (tap to remove) -->
+        <TextView
+            android:id="@+id/selectedReaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text=""
+            android:textSize="18sp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:background="@drawable/reaction_highlight_bg"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

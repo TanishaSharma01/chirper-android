@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (Dark Mode) -->
+    <style name="Base.Theme.Hackathon" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color (lighter for dark mode) -->
+        <item name="colorPrimary">@color/accentGreen</item>
+        <item name="colorPrimaryVariant">@color/accentGreenDark</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!-- Secondary brand color (lighter for dark mode) -->
+        <item name="colorSecondary">@color/accentOrange</item>
+        <item name="colorSecondaryVariant">@color/accentOrangeDark</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Dark background colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/primaryText</item>
+        <item name="colorOnBackground">@color/primaryText</item>
+
+        <!-- Status bar (dark mode) -->
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.Hackathon" parent="Base.Theme.Hackathon" />
+</resources>

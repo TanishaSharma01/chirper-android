@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Photo picker permissions for different Android versions -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hackathon"
+        tools:targetApi="31">
+
+        <!-- Login Activity - The launcher -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Register Activity -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <!-- Main Activity - Course Discussions List -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- Search Activity -->
+        <activity
+            android:name=".SearchActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+
+        <!-- Post Viewer Activity -->
+        <activity
+            android:name=".PostViewerActivity"
+            android:exported="false" />
+
+        <!-- Create Post Activity -->
+        <activity
+            android:name=".CreatePostActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+
+        <!-- Add Message Activity -->
+        <activity
+            android:name=".AddMessageActivity"
+            android:parentActivityName=".PostViewerActivity"
+            android:exported="false" />
+
+        <!-- User Profile Activity -->
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
